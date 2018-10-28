@@ -11,13 +11,13 @@ gogs:
     - '3000:3000'
 
 
-dockerui:
-  image: hypriot/rpi-dockerui
+portainer:
+  image: hypriot/rpi-portainer
   restart: always
   volumes:
     - '/var/run/docker.sock:/var/run/docker.sock'
   expose:
     - 9000
   ports:
-    - '80:9000'
+    - '9000:9000'
 
