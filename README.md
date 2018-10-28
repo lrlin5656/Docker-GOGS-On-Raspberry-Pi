@@ -1,4 +1,4 @@
-## Docker-On-Raspberry-Pi
+## Docker-GOGS-On-Raspberry-Pi
 
 A docker-compose file to ease my work on Hypriot of Raspberry Pi.
 
