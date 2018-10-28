@@ -1,2 +1,23 @@
 gogs:
-  
+  image: hypriot/rpi-gogs-raspbian
+  restart: always
+  volumes:
+    - '/home/pirate/gogs-data/:/data'
+  expose:
+    - 22
+    - 3000
+  ports:
+    - '8022:22'
+    - '3000:3000'
+
+
+dockerui:
+  image: hypriot/rpi-dockerui
+  restart: always
+  volumes:
+    - '/var/run/docker.sock:/var/run/docker.sock'
+  expose:
+    - 9000
+  ports:
+    - '80:9000'
+
